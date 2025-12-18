@@ -1,0 +1,93 @@
+body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f4f7f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.icon-container svg {
+    width: 64px;
+    height: 64px;
+    color: #005f73;
+}
+
+h2 {
+    color: #003d4d; /* Azul petróleo oscuro */
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #005f73; /* Azul petróleo medio */
+    font-size: 14px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ccd6d9;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #008fa3; /* Azul petróleo vibrante */
+}
+
+.login-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #005f73; /* Azul petróleo principal */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-button:hover {
+    background-color: #003d4d; /* Azul petróleo oscuro al pasar el mouse */
+}
+
+/* Responsividad para móviles */
+@media (max-width: 480px) {
+    .login-container {
+        padding: 25px;
+        margin: 20px;
+        box-shadow: none;
+        border: 1px solid #eee;
+    }
+}
+
