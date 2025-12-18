@@ -1,0 +1,45 @@
+# Dependency directories
+node_modules/
+jspm_packages/
+
+# Build outputs
+dist/
+build/
+out/
+bin/
+obj/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+env/
+.env/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+.project
+.classpath
+.settings/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs and databases
+*.log
+*.sqlite
+*.db
+
+# Environment variables
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
