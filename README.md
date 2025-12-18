@@ -104,3 +104,48 @@ El Sprint 3 se centrará en la Historia de Usuario 3 (HU3): Validación campos v
 *   El objetivo es evitar que se ingresen los datos vacíos.
 *   Si el usuario o la contraseña están vacíos, se debe mostrar el mensaje: 'Por favor complete todos los campos'.
 *   El mensaje de error debe ser visible y en color rojo.
+_________________________________________________________________
+# README - Avance del Proyecto: Login & Chat
+
+## 3. Sprint 3: Validación con JavaScript (JS)
+
+El Sprint 3 se enfocó en la implementación de la **Validación JS** por parte del equipo (TEAM).
+
+Este sprint tuvo una duración programada de 45 minutos, desarrollándose entre las 2:15 y las 3:00.
+
+### Historia de Usuario (HU3): Validación Campos Vacíos
+
+El objetivo de este sprint fue abordar la Historia de Usuario 3 (HU3): Validación campos vacíos.
+
+| Rol | Tarea |
+| :--- | :--- |
+| **Como** usuario del Login | **Quiero** recibir un mensaje si dejo campos vacíos |
+| **Para** | evitar que se ingresen los datos vacíos. |
+
+### Criterios de Aceptación Implementados (HU3)
+
+Para asegurar una mejor experiencia de usuario y la integridad de los datos, la lógica implementada en este sprint cumple con:
+
+1.  Si el campo de usuario o el de contraseña están vacíos, se debe mostrar el mensaje: **"Por favor complete todos los campos"**.
+2.  El mensaje de error generado debe ser **visible y en color rojo**.
+3.  La validación de *inputs* es un requisito clave para la puntuación general del proyecto (5 puntos).
+
+### Requerimientos y Entregables
+
+La implementación de la validación con JavaScript dependió de los entregables de los sprints anteriores:
+
+*   **Requerimientos:** Se requirió el **Témplate HTML ya Construido (Sprint 1)** y la **Creación del archivo CSS (Sprint 2)**.
+*   **Entregable:** La creación del **archivo JS** fue un requerimiento fundamental para ejecutar la lógica de validación de campos.
+
+---
+
+## 4. Próximos Pasos (Sprint 4)
+
+Una vez completada la validación de campos vacíos, el siguiente paso en la planificación es el **Sprint 4: Autenticación**.
+
+El Sprint 4 se centrará en la Historia de Usuario 4 (HU4): **Autenticación simulada**.
+
+**Objetivos del Sprint 4 (HU4):**
+
+*   Implementar la lógica para validar el Usuario de acuerdo con una lista de credenciales predefinida. La lista incluye, por ejemplo: {Admin/1234, Ginett/2345, Oscar/3456, Cristian/4567, Luis/5678, Felipe/6789}.
+*   Mostrar un **Mensaje de éxito o de error** tras intentar la autenticación.

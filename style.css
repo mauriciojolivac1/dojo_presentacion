@@ -81,6 +81,15 @@ h2 {
     background-color: #003d4d; /* Azul petróleo oscuro al pasar el mouse */
 }
 
+.error-text {
+    color: #d9534f; /* Color rojo para el error */
+    font-size: 14px;
+    text-align: center;
+    margin-top: 15px;
+    min-height: 20px; /* Mantiene el espacio aunque esté vacío */
+    font-weight: 500;
+}
+
 /* Responsividad para móviles */
 @media (max-width: 480px) {
     .login-container {
