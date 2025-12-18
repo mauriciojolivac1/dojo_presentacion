@@ -53,3 +53,54 @@ El Sprint 2 se enfocará en la aplicación de estilos CSS para lograr el Diseño
 *   Creación del archivo CSS.
 *   El formulario debe estar centrado en la pantalla y adaptarse a pantallas móviles y desktop.
 *   Definición de colores y tipografía según la paleta (Diseño UI/UX).
+_____________________________________________________
+hu2
+ # README - Avance del Proyecto: Login & Chat
+
+## 2. Sprint 2: Implementación de Estilos CSS y Diseño Responsive
+
+El objetivo del Sprint 2 fue enfocar el trabajo del equipo (TEAM) en la aplicación de **Estilos CSS**.
+
+Este sprint tuvo una duración programada de 45 minutos (1:15-2:00).
+
+### Historia de Diseño (HD2): Diseño Responsive
+
+El trabajo se centró en la Historia de Diseño 2 (HD2): Diseño responsive.
+
+| Rol | Tarea |
+| :--- | :--- |
+| **Como** usuario de login | **Quiero** que el diseño sea atractivo y responsivo |
+| **Para** | tener una mejor experiencia de usuario. |
+
+### Criterios de Aceptación Implementados (HD2)
+
+El diseño del formulario de Login debe cumplir con los siguientes puntos para mejorar la experiencia de usuario:
+
+1.  **El formulario debe estar centrado en la pantalla**.
+2.  **Debe adaptarse a pantallas móviles y desktop**.
+3.  Colores y tipografía definidos según la paleta (Diseño UI/UX).
+
+### Requerimientos y Entregables
+
+Para poder iniciar este sprint, fue un requerimiento fundamental contar con el **Témplate HTML ya Construido** durante el Sprint 1.
+
+**Resultado de la Review:**
+
+La presentación del resultado del Sprint consiste en la entrega del archivo **`Login.css`**.
+
+La creación de este archivo CSS también es un requerimiento para los posibles bloqueantes futuros de la HU3 (Validación campos vacíos) y la HU4 (Autenticación simulada).
+
+---
+
+## 3. Próximos Pasos (Sprint 3)
+
+Una vez finalizado el Sprint 2 y habiendo establecido el diseño responsive, el siguiente paso en la planificación es el **Sprint 3: Validación JS**.
+
+El Sprint 3 se centrará en la Historia de Usuario 3 (HU3): Validación campos vacíos, implementando la lógica JavaScript necesaria.
+
+**Objetivos del Sprint 3 (HU3):**
+
+*   Como usuario del Login, quiero recibir un mensaje si dejo campos vacíos.
+*   El objetivo es evitar que se ingresen los datos vacíos.
+*   Si el usuario o la contraseña están vacíos, se debe mostrar el mensaje: 'Por favor complete todos los campos'.
+*   El mensaje de error debe ser visible y en color rojo.
