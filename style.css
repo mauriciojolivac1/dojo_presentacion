@@ -86,7 +86,16 @@ h2 {
     font-size: 14px;
     text-align: center;
     margin-top: 15px;
-    min-height: 20px; /* Mantiene el espacio aunque esté vacío */
+    min-height: 20px;
+    font-weight: 500;
+}
+
+.success-text {
+    color: #28a745; /* Color verde para el éxito */
+    font-size: 14px;
+    text-align: center;
+    margin-top: 15px;
+    min-height: 20px;
     font-weight: 500;
 }
 

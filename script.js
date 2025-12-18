@@ -2,32 +2,60 @@ document.addEventListener('DOMContentLoaded', () => {
     const loginForm = document.querySelector('form');
     const usernameInput = document.getElementById('username');
     const passwordInput = document.getElementById('password');
-    const errorMessage = document.getElementById('error-message');
+    const messageDisplay = document.getElementById('error-message');
+
+    // Lista de usuarios autorizados
+    const users = [
+        { user: 'Admin', pass: '1234' },
+        { user: 'Ginett', pass: '2345' },
+        { user: 'Oscar', pass: '3456' },
+        { user: 'Cristian', pass: '4567' },
+        { user: 'Luis', pass: '5678' },
+        { user: 'Felipe', pass: '6789' }
+    ];
 
     loginForm.addEventListener('submit', (event) => {
-        // Obtenemos los valores y eliminamos espacios en blanco al inicio y final
+        // Evita que el formulario se envíe realmente
+        event.preventDefault();
+
         const username = usernameInput.value.trim();
         const password = passwordInput.value.trim();
 
-        // Limpiar mensaje de error previo
-        errorMessage.textContent = '';
+        // Limpiar estilos y mensajes previos
+        messageDisplay.textContent = '';
+        messageDisplay.className = '';
 
+        // 1. Validar campos vacíos
         if (username === '' || password === '') {
-            // Evita que el formulario se envíe
-            event.preventDefault();
+            messageDisplay.textContent = 'Por favor cumple con todos los campo';
+            messageDisplay.classList.add('error-text');
             
-            // Muestra el mensaje de error en el contenedor inferior
-            errorMessage.textContent = 'Por favor cumple con todos los campo';
-
-            // Limpiar los campos de entrada
             usernameInput.value = '';
             passwordInput.value = '';
-            
-            // Opcional: poner el foco de nuevo en el primer campo
             usernameInput.focus();
+            return;
+        }
+
+        // 2. Validar credenciales
+        const foundUser = users.find(u => u.user === username && u.pass === password);
+
+        if (foundUser) {
+            // Mensaje de éxito
+            messageDisplay.textContent = `¡Bienvenido(a) ${foundUser.user}! Ingreso exitoso.`;
+            messageDisplay.classList.add('success-text');
+            
+            // Opcional: Limpiar campos después del éxito
+            usernameInput.value = '';
+            passwordInput.value = '';
         } else {
-            // Si todo está bien, podrías proceder con el login
-            console.log('Validación exitosa, intentando ingresar...');
+            // Mensaje de error por credenciales incorrectas
+            messageDisplay.textContent = 'Usuario o contraseña incorrectos';
+            messageDisplay.classList.add('error-text');
+            
+            // Limpiar campos y dar foco
+            usernameInput.value = '';
+            passwordInput.value = '';
+            usernameInput.focus();
         }
     });
 });
